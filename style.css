@@ -1,0 +1,38 @@
+*{
+    background-color: #609ED4;
+    font-family: inter;
+    font-size: 22px;
+    font-weight: 400%;
+    line-height:150%;
+    
+    
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 5px;
+    width: 140px;
+    height: 55px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.texto_entrada{
+    margin-top: 15px;
+   
+}
+
+.info{
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+.texto_salida{
+    margin-left: 100px;
+    padding-left: 20px;
+
+}
