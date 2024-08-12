@@ -18,15 +18,18 @@
 
     <main>
         <section>
-            <textarea class="texto_entrada"  cols="30" rows="7" placeholder="Ingrese el texto aqui"></textarea >
+            <div> 
+                <textarea class="texto_entrada"  cols="30" rows="6" placeholder="Ingrese el texto aqui"></textarea >
+                <button class="btn_pegar" onclick="btn_pegar()" >Pegar</button>
+            </div>
             
             <div> 
                 <h6 class="info"> <img src="/images/exlamacion.png" alt="exlamacion"> Solo letras minúsculas y sin acentos </h6>
             </div>
             
             <div class="botones">
-                <button class="btn_encriptar">Encriptar</button>
-                <button class="btn_desencriptar">Desncriptar</button>
+                <button class="btn_encriptar" onclick = "btn_Encriptar()">Encriptar</button>
+                <button class="btn_desencriptar" onclick = "btn_Desencriptar()">Desncriptar</button>
             </div>
         
         </section>
@@ -34,12 +37,18 @@
         <section>
             <textarea class="texto_salida"  cols="22" rows="10"></textarea>
             <div >
-                <button class="btn_copiar">copiar</button>
+                <button id="copy" class="btn_copiar" onclick="btn_copiar()" >Copiar</button>
             </div> 
         </section>
 
         
     </main>
+    <footer > 
+        <div class="foot">
+           <p class="footer">Dev: Johan Rojas Año: 2024</p>
+        </div>
+    </footer>
 
+<script src="/script.js"></script> 
 </body>
 </html>

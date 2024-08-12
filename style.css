@@ -23,7 +23,7 @@ main{
 
 .texto_entrada{
     margin-left: 80px;
-    margin-top: 10px;
+    margin-top: 2px;
     border: none;
     text-transform: lowercase;
     color: white;
@@ -51,7 +51,7 @@ main{
     border: none;
     border-radius: 32px;
     margin-left: 98px;
-    margin-top: 5px;
+    margin-top: 2px;
     padding-left: 20px;
     position: fixed;
     
@@ -102,4 +102,30 @@ main{
     margin-left: 113px;
     margin-top: 402px;
     text-align: center;
+}
+
+.btn_pegar{
+    display: flex;  
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin-left: 255px;
+    text-align: center:
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{  
+    display: flex;
+    font-size: 20px;
+    width: 300px;
+    justify-content: center;
+    border: 3px dotted #0A3871;
+    
 }
