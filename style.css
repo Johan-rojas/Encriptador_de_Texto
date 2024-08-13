@@ -63,7 +63,7 @@ main{
 
 .botones{
     display: flex;
-    margin-top: 10px;   
+    margin-top: 1px;   
 }
 
 .btn_encriptar{
@@ -104,28 +104,37 @@ main{
     text-align: center;
 }
 
+.entrada{
+    display: flex;
+    
+}
+
 .btn_pegar{
-    display: flex;  
+    background-color: #D8DFE8;
     border: 1px solid #0A3871;
+    display: flex; 
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 50px;
-    width: 100px;
-    margin-left: 255px;
-    text-align: center
+    height: 52px;
+    width: 120px;
+    margin-left: 15px;
+    justify-content: center;
 }
 
 .foot{
+    border: 2px dotted gray;
     display: flex;
-    justify-content: center;
+    margin-left: 57px;
+    margin-top: 50px;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 550px ; 
 }
 
 .footer{  
-    display: flex;
-    font-size: 20px;
-    width: 300px;
-    justify-content: center;
-    border: 3px dotted #0A3871;
-    
+    font-size: 15px;  
+    color: white;
+     
 }
