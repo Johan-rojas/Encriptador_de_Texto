@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Encriptador de Texto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
-
 </head>
-
 <body>
     <header>
-        <img class="logo" src="images/Logo.png" alt="Logo de Alura Latam" >
+        <div class="container_header">
+            <div class="header">
+                <img class="logo" src="/images/Logo.png">           
+            </div>  
+        </div>
     </header>
-
     <main>
-        <section>
-            <div class="entrada"> 
-                <textarea class="texto_entrada"  cols="30" rows="6" placeholder="Ingrese el texto aqui"></textarea >
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="texto_Entrada" id="texto_Entrada" placeholder="Ingrese el texto aquí" autofocus></textarea>
                 <button class="btn_pegar" onclick="btn_pegar()" >Pegar</button>
-            </div>
-            
-            <div> 
-                <h6 class="info"> <img src="images\exlamacion.png" alt="exlamacion"> Solo letras minúsculas y sin acentos </h6>
-            </div>
-            
-            <div class="botones">
-                <button class="btn_encriptar" onclick = "btn_Encriptar()">Encriptar</button>
-                <button class="btn_desencriptar" onclick = "btn_Desencriptar()">Desncriptar</button>
-            </div>
-        
-        </section>
-        
-        <section>
-            <textarea class="texto_salida"  cols="22" rows="10"></textarea>
-            <div >
-                <button id="copy" class="btn_copiar" onclick="btn_copiar()" >Copiar</button>
-            </div> 
-        </section>
-
-        
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="/images/exlamacion.png" alt="exlamacion" />
+                        Solo letras minúsculas y sin acentos
+                    </span>
+                    <div class="botones">
+                        <button class="btn_encriptar" onclick = "btn_Encriptar()">Encriptar</button>
+                        <button class="btn_desencriptar" onclick = "btn_Desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="right">
+                <img id="muneco" class="muneco" src="/images/Muñeco.png" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="texto_Salida" class="texto_Salida" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="btn_copiar" class="btn_copiar" onclick="btn_copiar()" >Copiar</button>
+            </section>
+        </article>
     </main>
-    <footer > 
-        <div class="foot">
-           <p class="footer">Dev: Johan David Rojas</p>
-           <a class="footer" href="https://github.com/Johan-rojas"> <img src="images/github.png">Github</a>
-           <a class="footer" href="https://www.linkedin.com/in/johan-david-rojas-martinez-877a3a203/"> <img src="images/linkedin.png">LinkedIn</a>
-           <a class="footer" href="https://www.instagram.com/johan.rojasm?igsh=MTFzbm94NjNtN2llMg%3D%3D&utm_source=qr"> <img src="images/instagram.png">Instagram</a>
+    <footer class="footer ">
+        <p class="creador">Dev: Johan David Rojas</p>
+        <div>
+            <a class="links" href="https://github.com/Johan-rojas"> <img src="images/github.png">Github</a>
+            <a class="links" href="https://www.linkedin.com/in/johan-david-rojas-martinez-877a3a203/"> <img src="images/linkedin.png">LinkedIn</a>
+            <a class="links" href="https://www.instagram.com/johan.rojasm?igsh=MTFzbm94NjNtN2llMg%3D%3D&utm_source=qr"> <img src="images/instagram.png">Instagram</a>  
+            
         </div>
     </footer>
-
-<script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>
